@@ -1,13 +1,179 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+  }
+@media screen and (min-width: 800px) {
+    .create-account {
+        width: 60%;
+        max-width: 600px!important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+    }
+}
+.create-account {
+    width: 80%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+}
+.create-account h4 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+.card, .card-img {
+    border-radius: 35px!important;
+    padding: 0px;
+}
+.plant-title {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+.card-img-overlay {
+    padding: 0px;
+}
+.plant-title {
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+}
+.plant-title h6 {
+    font-size: 65%;
+    margin-bottom: 0px;
+}
+.specification {
+    background-color: rgba(0,0,0,.5);
+    left: 5%;
+    bottom: 8%;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 2px;
+}
+.specification:hover {
+    cursor: default;
+}
+.badge {
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    display: none;
+}
+.selection {
+    background-color: black;
+}
+.card:hover .badge{
+    display: block;
+}
+.card:hover .plus{
+    display: block;
+}
+.card:hover .minus{
+    display: block;
+}
+.list-group-item {
+    background-color: rgba(0,0,0,.5);
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.plus, .minus {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 80%;
+    font-size: large;
+    display: none;
 }
+.plants-grid {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.greeting {
+    text-align: center;
+    font-size: small;
+    line-height: 150%;
+}
+.greeting div {
+    font-size: medium;
+}
+
+.fa-stack[data-count]:after {
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size:40%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  color: black;
+  text-align:center;
+  min-width: 2em;
+  font-weight:bold;
+  background: white;
+  border-style:solid;
+}
+.fa-circle {
+  color: black;
+}
+
+.red-cart {
+	color: black; background:white;
+}
+
+.plants-heading {
+    width: fit-content;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.plants-heading h4 {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.filters {
+    display: flex;
+}
+
+.category-selection {
+    background-color: #1266f1;
+    color: #fff;
+    padding: 0.625rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    font-family: "Helvetica", sans-serif;
+}
+ .plant-card h3 {
+    text-align: center;
+    font-size: 125%;
+ }
+ .column {
+    float: left;
+    width: 50%;
+ }
+ .cart {
+     margin-left: 8%;
+ }
+ .plants {
+     background-image: url('https://cdn.pixabay.com/photo/2015/12/19/02/12/texture-1099399_960_720.jpg');
+ }
+ .plants h3, h1{
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+ }
+ .plantPage {
+     background-color: aqua;
+ }
+ .card-title {
+     margin-bottom: 0;
+ }
+ .growing-info-link:hover {
+    color: rgb(0, 0, 0) !important;
+ }
+ .col-md-6 img {
+     border-radius: 15px!important;
+ }

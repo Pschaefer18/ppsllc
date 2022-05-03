@@ -1,17 +1,38 @@
 {
+  "homepage": "https://Pschaefer18.github.io",
   "name": "pps-draft",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@airtable/blocks": "^1.11.0",
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "airtable": "^0.11.2",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "deploy": "^1.0.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "mdb-react-ui-kit": "^2.3.0",
+    "mdbreact": "^5.2.0",
+    "popper.js": "^1.16.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
