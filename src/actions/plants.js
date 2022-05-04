@@ -5,7 +5,7 @@ export const fetchPlants = () => async (dispatch, getState) => {
   var responseData = await response.json();
   console.log(responseData);
   var plants = []
-  responseData.records.forEach((record) => {
+  await responseData.records.forEach((record) => {
     plants.push(record.fields)
   })
   console.log(plants)
