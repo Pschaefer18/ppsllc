@@ -3,6 +3,8 @@ import allReducers from "../reducers"
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import logger from "redux-logger"
-var store = configureStore({reducer: allReducers, middleWare: [thunk, logger]});
-
+const store = configureStore({
+    reducer: allReducers,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  })
 export default store;
