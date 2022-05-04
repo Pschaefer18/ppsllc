@@ -16,7 +16,6 @@ import { Form, FormControl, Button } from "react-bootstrap";
 
 function Plants() {
   //state
-  let plants = useSelector(state => state.plants)
   let [selectedCategory, setSelectedCategory] = useState("view all");
   let [cart, setCart] = useState({});
   let [categories, setCategories] = useState(["view all"]);
@@ -25,9 +24,11 @@ function Plants() {
   let dispatch = useDispatch();
 
   //run on first render
-  useEffect(async () => {
+  useEffect(() => {
     dispatch(actions.fetchPlants())
   }, [dispatch]);
+
+  let plants = useSelector(state => state.plants)
 
   return (
     <div className="plants">
